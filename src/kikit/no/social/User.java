@@ -12,7 +12,7 @@ public class User {
     public String Email;
     public boolean Online;
     public int Age;
-    private List<Integer> FriendsList = new ArrayList<>();
+    public List<Integer> FriendsList = new ArrayList<>();
 
     public User(int userId, String name, String username, String password, String email, int age, boolean online) {
         this.Name = name;
@@ -61,7 +61,4 @@ public class User {
         FriendsList.add(id);
     }
 
-    public void RemoveFriend(int id) {
-        FriendsList.remove(id);
-    }
 }

@@ -9,7 +9,6 @@ public static BufferedReader console = new BufferedReader(new InputStreamReader(
 public static App app = new App("kikBook");
 
     public static void main(String[] args) throws IOException {
-        //app.PrintAllUsers();
         app.Run();
     }
 }
