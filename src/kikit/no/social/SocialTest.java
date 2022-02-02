@@ -39,10 +39,8 @@ class SocialTest {
 
     @Test
     @Order (5)
-     void testThatMethodThrowsIllegalArgumentWithIllegalArgumentExceptionAndWith() {
-        var exception = Assertions.assertThrows(IllegalArgumentException.class, () -> {
-            Main.app.Test(1, 2, 3);
-        });
+     void testThatMethodThrowsIllegalArgument() {
+        var exception = Assertions.assertThrows(IllegalArgumentException.class, () -> Main.app.Test(1, 2, 3));
         Assertions.assertEquals("feil", exception.getMessage());
     }
 }
